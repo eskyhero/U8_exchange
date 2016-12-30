@@ -1,0 +1,1110 @@
+2016-12-30 11:00:17 - [0] - [ INFO] - javax.servlet.ServletContextListener -MainUI.java(41) -启动定时器，开始同步数据.
+  2016-12-30 11:00:17 - [203] - [ERROR] - javax.servlet.ServletContextListener -MainUI.java(66) -Unable to store Job with name: 'orderJobBean' and group: 'DEFAULT', because one already exists with this identification.
+  org.quartz.ObjectAlreadyExistsException: Unable to store Job with name: 'orderJobBean' and group: 'DEFAULT', because one already exists with this identification.
+	at org.quartz.simpl.RAMJobStore.storeJob(RAMJobStore.java:220)
+	at org.quartz.simpl.RAMJobStore.storeJobAndTrigger(RAMJobStore.java:193)
+	at org.quartz.core.QuartzScheduler.scheduleJob(QuartzScheduler.java:613)
+	at org.quartz.impl.StdScheduler.scheduleJob(StdScheduler.java:238)
+	at com.ircloud.ydh.exchange.gui.MainUI.main(MainUI.java:60)
+2016-12-30 11:01:00 - [43372] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -开始执行Job：null
+  2016-12-30 11:01:00 - [43373] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -Job 参数：
+  2016-12-30 11:01:00 - [43374] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -执行Job时间：2016-12-30 11:01:00
+  2016-12-30 11:01:00 - [43381] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -开始执行Job：null
+  2016-12-30 11:01:00 - [43381] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -Job 参数：
+  2016-12-30 11:01:00 - [43382] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -执行Job时间：2016-12-30 11:01:00
+  2016-12-30 11:01:00 - [43390] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:01:00 - [43390] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:01:00 - [43487] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 0 of 80; total allocated: 0 of 200]
+  2016-12-30 11:01:00 - [43487] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 0 of 80; total allocated: 0 of 200]
+  2016-12-30 11:01:00 - [43498] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:00 - [43498] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:00 - [43710] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnectionOperator -DefaultClientConnectionOperator.java(177) -Connecting to api.dinghuo123.com:443
+  2016-12-30 11:01:00 - [43712] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnectionOperator -DefaultClientConnectionOperator.java(177) -Connecting to api.dinghuo123.com:443
+  2016-12-30 11:01:00 - [43759] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:00 - [43759] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:00 - [43761] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:00 - [43761] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:00 - [43762] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:00 - [43762] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:00 - [43763] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:00 - [43763] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:00 - [43764] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:00 - [43764] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:00 - [43765] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:01:00 - [43765] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:01:00 - [43766] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:01:00 - [43766] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:01:00 - [43767] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:01:00 - [43767] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:01:00 - [43768] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:00 - [43768] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:00 - [43769] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:01:00 - [43768] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:01:00 - [43770] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:00 - [43770] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:00 - [43769] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:00 - [43771] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44093] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44094] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44094] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:00 GMT
+  2016-12-30 11:01:01 - [44094] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44095] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 228
+  2016-12-30 11:01:01 - [44095] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44095] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAKZ1lhHnaAkABg4NtwhnJo1IpzVj; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44095] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44096] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44096] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44096] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=1C8848072D9EBA85D8585EC67EAF8BED; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44097] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44097] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44097] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460623
+  2016-12-30 11:01:01 - [44097] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 59
+  2016-12-30 11:01:01 - [44098] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 60
+  2016-12-30 11:01:01 - [44098] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44102] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44106] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 0][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44107] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44107] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":{"access_token":"6d83a3a4272fce1b8c7a1ec0fbb76286","expires_in":2592000,"scope":"basic","refresh_token":"b9d76277de4102b2030f75994b9fe5ac","create_time":1483066860632,"nodeCode":"hw"},"code":200,"message":"操作成功"}
+  2016-12-30 11:01:01 - [44113] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44113] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44114] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:00 GMT
+  2016-12-30 11:01:01 - [44114] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44114] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 228
+  2016-12-30 11:01:01 - [44114] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44115] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAEpiSQJcawkABg4Nt5ONJY/l6TUh; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44115] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44115] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44115] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44116] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=6EC518A136CB9AA3DE723BC1C78FDB2E; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44116] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44116] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44117] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460623
+  2016-12-30 11:01:01 - [44117] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 58
+  2016-12-30 11:01:01 - [44117] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 60
+  2016-12-30 11:01:01 - [44118] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44118] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44118] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 1][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44119] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44119] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":{"access_token":"7b7629b0b2e4a0aaa3e9b60f0a952d29","expires_in":2592000,"scope":"basic","refresh_token":"26953852559a9bf33051e829cfc701ff","create_time":1483066860632,"nodeCode":"hw"},"code":200,"message":"操作成功"}
+  2016-12-30 11:01:01 - [44120] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_type_list.json?verbose=true&access_token=7b7629b0b2e4a0aaa3e9b60f0a952d29
+  2016-12-30 11:01:01 - [44121] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_type_list.json?verbose=true&access_token=6d83a3a4272fce1b8c7a1ec0fbb76286
+  2016-12-30 11:01:01 - [44121] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -Token.java(51) -检查token是否过期
+  2016-12-30 11:01:01 - [44121] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44122] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -Token.java(51) -检查token是否过期
+  2016-12-30 11:01:01 - [44122] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44123] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44123] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44123] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:01:01 - [44129] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:01:01 - [44130] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:01 - [44130] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:01 - [44130] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:01 - [44131] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:01 - [44131] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44131] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44132] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44132] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44132] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:01 - [44132] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:01 - [44133] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44133] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44133] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44134] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44134] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:01 - [44134] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:01 - [44134] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 7b7629b0b2e4a0aaa3e9b60f0a952d29
+  2016-12-30 11:01:01 - [44135] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 6d83a3a4272fce1b8c7a1ec0fbb76286
+  2016-12-30 11:01:01 - [44135] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:01 - [44135] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:01 - [44136] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44136] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44299] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44299] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44300] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:01 GMT
+  2016-12-30 11:01:01 - [44301] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44301] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 1295
+  2016-12-30 11:01:01 - [44301] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44301] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAACNzgVcVag0ABg4Nt1OEC4GNrl0+; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44302] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44302] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44302] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44303] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=4EE4D9B84E3084EB61DE520B389A6170; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44303] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44303] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44304] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:01:01 - [44305] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4999
+  2016-12-30 11:01:01 - [44305] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:01:01 - [44306] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44306] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44307] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 0][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44307] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44307] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":6353396,"isDefault":"","leafTypeFlag":"0","modifyTime":null,"name":"智能电子锁","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353392,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353402,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号相关联产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":3303044,"isDefault":"1","leafTypeFlag":"1","modifyTime":null,"name":"其他产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353397,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"家用","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353398,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"酒店","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353399,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"公寓","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353400,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"配件","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2}],"offset":0,"size":8},"message":"操作成功"}
+  2016-12-30 11:01:01 - [44311] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_unit_list.json?verbose=true&access_token=6d83a3a4272fce1b8c7a1ec0fbb76286
+  2016-12-30 11:01:01 - [44312] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44312] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44312] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:01:01 - [44314] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44314] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44315] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:01 GMT
+  2016-12-30 11:01:01 - [44315] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44315] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 1295
+  2016-12-30 11:01:01 - [44315] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44316] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAPBXsGR9Zg0ABg4Nt5/N4z/H6BMR; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44316] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44316] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44316] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=D28DABE5EEFCAF33C77C5D921D7EF0EC; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:01:01 - [44318] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4998
+  2016-12-30 11:01:01 - [44318] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:01:01 - [44318] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44319] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44319] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 1][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44320] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44320] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":6353396,"isDefault":"","leafTypeFlag":"0","modifyTime":null,"name":"智能电子锁","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353392,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353402,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号相关联产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":3303044,"isDefault":"1","leafTypeFlag":"1","modifyTime":null,"name":"其他产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353397,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"家用","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353398,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"酒店","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353399,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"公寓","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353400,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"配件","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2}],"offset":0,"size":8},"message":"操作成功"}
+  2016-12-30 11:01:01 - [44321] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:01 - [44321] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:01 - [44321] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_unit_list.json?verbose=true&access_token=7b7629b0b2e4a0aaa3e9b60f0a952d29
+  2016-12-30 11:01:01 - [44321] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44322] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44322] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44322] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44323] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:01 - [44323] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:01:01 - [44323] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44324] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44324] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:01 - [44325] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 6d83a3a4272fce1b8c7a1ec0fbb76286
+  2016-12-30 11:01:01 - [44325] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:01 - [44325] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:01 - [44325] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:01 - [44325] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44326] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44326] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44327] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:01 - [44327] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44327] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44328] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:01 - [44328] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 7b7629b0b2e4a0aaa3e9b60f0a952d29
+  2016-12-30 11:01:01 - [44328] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:01 - [44328] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44383] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44383] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44384] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:01 GMT
+  2016-12-30 11:01:01 - [44384] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44384] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 281
+  2016-12-30 11:01:01 - [44385] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44385] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAOWCm1U0CwEABg4Nt4SejmOYbBAS; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44385] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44385] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44386] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44386] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=830A04A565F5EDB6A445DFD8D2B57AAF; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44386] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44387] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44387] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:01:01 - [44387] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4997
+  2016-12-30 11:01:01 - [44387] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:01:01 - [44388] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44388] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44388] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 0][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44389] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44389] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":1345895,"name":"把","status":"0"},{"id":1345894,"name":"个","status":"0"},{"id":1345886,"name":"套","status":"0"},{"id":1345856,"name":"箱","status":"0"},{"id":1290377,"name":"件","status":"0"}],"offset":0,"size":5},"message":"操作成功"}
+  2016-12-30 11:01:01 - [44390] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/inventory/warehouse.json?verbose=true&access_token=6d83a3a4272fce1b8c7a1ec0fbb76286
+  2016-12-30 11:01:01 - [44390] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44391] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44391] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:01:01 - [44395] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44396] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:01 - [44396] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:01 GMT
+  2016-12-30 11:01:01 - [44396] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:01 - [44396] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44397] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44397] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 281
+  2016-12-30 11:01:01 - [44397] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44398] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44398] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:01 - [44398] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAJzAHjlaFAEABg4Nt4v0We+dzVhu; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44399] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44399] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44399] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44399] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44400] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44400] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:01 - [44400] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=C9387BAC40E808AC5BFB784DE747B600; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44401] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 6d83a3a4272fce1b8c7a1ec0fbb76286
+  2016-12-30 11:01:01 - [44401] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44401] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44402] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:01:01 - [44401] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:01 - [44402] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4996
+  2016-12-30 11:01:01 - [44403] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:01:01 - [44403] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44402] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44403] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44404] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 1][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44404] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44405] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":1345895,"name":"把","status":"0"},{"id":1345894,"name":"个","status":"0"},{"id":1345886,"name":"套","status":"0"},{"id":1345856,"name":"箱","status":"0"},{"id":1290377,"name":"件","status":"0"}],"offset":0,"size":5},"message":"操作成功"}
+  2016-12-30 11:01:01 - [44405] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/inventory/warehouse.json?verbose=true&access_token=7b7629b0b2e4a0aaa3e9b60f0a952d29
+  2016-12-30 11:01:01 - [44406] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44406] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44406] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:01:01 - [44408] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:01 - [44408] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:01 - [44408] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44409] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44409] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:01 - [44409] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44409] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44410] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:01 - [44410] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 7b7629b0b2e4a0aaa3e9b60f0a952d29
+  2016-12-30 11:01:01 - [44410] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:01 - [44411] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44457] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44458] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44459] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:01 GMT
+  2016-12-30 11:01:01 - [44459] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44459] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 194
+  2016-12-30 11:01:01 - [44460] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44460] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAItNdUWjOgIABg4Nt2oV5ORI/cQI; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44460] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44460] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44461] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44461] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=442D598B6CF6E2FDD0183556AA0A3003; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44461] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44468] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44469] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:01:01 - [44469] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4995
+  2016-12-30 11:01:01 - [44469] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:01:01 - [44469] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44470] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44470] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 0][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44470] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44471] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":[{"address":"","createTime":"2016-11-10 17:27:29","id":514529,"isDefault":true,"modifyTime":"2016-11-10 17:27:29","name":"默认仓","number":"001"}],"message":"操作成功"}
+  2016-12-30 11:01:01 - [44471] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44472] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44472] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:01 GMT
+  2016-12-30 11:01:01 - [44472] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44472] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 194
+  2016-12-30 11:01:01 - [44473] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44473] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAPEQyD/BXAIABg4Nt8bs1UULwvP4; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44473] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44474] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44474] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44474] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=FB888CF68FE25E4B6CEE5CEE7CCCD76D; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44475] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44475] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44475] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:01:01 - [44475] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4994
+  2016-12-30 11:01:01 - [44476] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:01:01 - [44476] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44476] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44477] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 1][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44477] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44477] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":[{"address":"","createTime":"2016-11-10 17:27:29","id":514529,"isDefault":true,"modifyTime":"2016-11-10 17:27:29","name":"默认仓","number":"001"}],"message":"操作成功"}
+  2016-12-30 11:01:01 - [44482] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true&access_token=7b7629b0b2e4a0aaa3e9b60f0a952d29
+  2016-12-30 11:01:01 - [44483] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44483] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44484] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:01:01 - [44485] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:01 - [44486] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:01 - [44486] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44486] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44486] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:01 - [44487] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44487] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true HTTP/1.1
+  2016-12-30 11:01:01 - [44487] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:01 - [44487] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 7b7629b0b2e4a0aaa3e9b60f0a952d29
+  2016-12-30 11:01:01 - [44488] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:01 - [44488] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44489] - [DEBUG] - java.sql.Connection -JakartaCommonsLoggingImpl.java(27) -{conn-100000} Connection
+  2016-12-30 11:01:01 - [44495] - [DEBUG] - java.sql.Connection -JakartaCommonsLoggingImpl.java(27) -{conn-100000} Preparing Statement:    select    cs.autoid as id,   '001'  as wareHouseNumber,   m.cinvdefine5 as code,   cs.iquantity as count  from CurrentStock cs  right join Inventory m on m.cinvcode = cs.cinvcode  where m.cinvdefine5 is not null and cs.cwhcode = '05'     
+  2016-12-30 11:01:01 - [44515] - [DEBUG] - java.sql.PreparedStatement -JakartaCommonsLoggingImpl.java(27) -{pstm-100001} Executing Statement:    select    cs.autoid as id,   '001'  as wareHouseNumber,   m.cinvdefine5 as code,   cs.iquantity as count  from CurrentStock cs  right join Inventory m on m.cinvcode = cs.cinvcode  where m.cinvdefine5 is not null and cs.cwhcode = '05'     
+  2016-12-30 11:01:01 - [44516] - [DEBUG] - java.sql.PreparedStatement -JakartaCommonsLoggingImpl.java(27) -{pstm-100001} Parameters: []
+  2016-12-30 11:01:01 - [44516] - [DEBUG] - java.sql.PreparedStatement -JakartaCommonsLoggingImpl.java(27) -{pstm-100001} Types: []
+  2016-12-30 11:01:01 - [44545] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44545] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44546] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:01 GMT
+  2016-12-30 11:01:01 - [44546] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44546] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 47
+  2016-12-30 11:01:01 - [44546] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44547] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAGN3jy8GhAMABg4NtwbB5MmfTA0c; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44547] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44547] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44547] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44548] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=CB1DF2AC042DDD6F864BDA14C6E15058; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44548] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44548] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44548] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:01:01 - [44549] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4993
+  2016-12-30 11:01:01 - [44549] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:01:01 - [44549] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44549] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44550] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 1][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44550] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44550] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":[],"message":"操作成功"}
+  2016-12-30 11:01:01 - [44551] - [ERROR] - com.ircloud.ydh.exchange.job.AbstractJob -AbstractJob.java(260) -账号：创维安防   无新增订单可以同步
+  2016-12-30 11:01:01 - [44563] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -nullJob执行成功，耗时：1191毫秒。
+  2016-12-30 11:01:01 - [44609] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/goods/goods_inventory_batch.json?productEntries=%5B%7B%22wareHouseNumber%22%3A%22001%22%2C%22goodsCode%22%3A%22SKY-001-RFPDA-C%22%2C%22inventoryCount%22%3A%22162.000000%22%7D%2C%7B%22wareHouseNumber%22%3A%22001%22%2C%22goodsCode%22%3A%22SKY-001-RFPDA-S%22%2C%22inventoryCount%22%3A%22195.000000%22%7D%5D&handler&warehouseId=514529&verbose=true
+  2016-12-30 11:01:01 - [44610] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44610] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44610] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:01:01 - [44612] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:01:01 - [44612] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:01:01 - [44612] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44613] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:01:01 - [44613] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:01:01 - [44613] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/goods/goods_inventory_batch.json HTTP/1.1
+  2016-12-30 11:01:01 - [44614] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/goods/goods_inventory_batch.json HTTP/1.1
+  2016-12-30 11:01:01 - [44614] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:01:01 - [44614] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:01:01 - [44614] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 6d83a3a4272fce1b8c7a1ec0fbb76286
+  2016-12-30 11:01:01 - [44615] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 310
+  2016-12-30 11:01:01 - [44615] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:01:01 - [44615] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:01:01 - [44679] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44679] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:01:01 - [44680] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:01:01 GMT
+  2016-12-30 11:01:01 - [44680] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:01:01 - [44680] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 100
+  2016-12-30 11:01:01 - [44681] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:01:01 - [44681] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAAYBYmdRdgUABg4Nt6WMa5lRKlJn; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44681] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:01:01 - [44681] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:01:01 - [44682] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:01:01 - [44682] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=841D3CBC06AEE77A17AED98DDCF6AEA7; Path=/; HttpOnly
+  2016-12-30 11:01:01 - [44683] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:01:01 - [44683] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:01:01 - [44683] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:01:01 - [44683] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4992
+  2016-12-30 11:01:01 - [44684] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:01:01 - [44684] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:01:01 - [44684] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44685] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 1][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:01:01 - [44685] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:01:01 - [44685] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":[],"code":200,"message":"成功导入2个商品的库存，导入失败有0个商品库存"}
+  2016-12-30 11:01:01 - [44696] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -nullJob执行成功，耗时：1315毫秒。
+  2016-12-30 11:02:00 - [102789] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -开始执行Job：null
+  2016-12-30 11:02:00 - [102789] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -Job 参数：
+  2016-12-30 11:02:00 - [102789] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -执行Job时间：2016-12-30 11:02:00
+  2016-12-30 11:02:00 - [102790] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:02:00 - [102791] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:02:00 - [102791] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:02:00 - [102791] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:02:00 - [102792] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -开始执行Job：null
+  2016-12-30 11:02:00 - [102793] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -Job 参数：
+  2016-12-30 11:02:00 - [102793] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -执行Job时间：2016-12-30 11:02:00
+  2016-12-30 11:02:00 - [102794] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:02:00 - [102794] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:02:00 - [102795] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:02:00 - [102795] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:02:00 - [102796] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:02:00 - [102796] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:02:00 - [102796] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:02:00 - [102797] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:02:00 - [102797] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:02:00 - [102797] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:02:00 - [102800] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:02:00 - [102801] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:02:00 - [102801] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:02:00 - [102801] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:02:00 - [102802] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:02:00 - [102802] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:02:00 - [102802] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:02:00 - [102802] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:02:00 - [102803] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:02:00 - [102803] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:02:00 - [102804] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:02:00 - [102803] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:02:00 - [102804] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:02:00 - [102804] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:02:00 - [102804] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:02:00 - [102805] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:02:00 - [102805] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:02:00 - [102806] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:02:21 - [124114] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(169) -Connection 0.0.0.0:50825<->180.97.161.71:443 closed
+  2016-12-30 11:02:21 - [124115] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(716) -Closing the connection.
+  2016-12-30 11:02:21 - [124115] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(169) -Connection 0.0.0.0:50825<->180.97.161.71:443 closed
+  2016-12-30 11:02:21 - [124115] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(154) -Connection 0.0.0.0:50825<->180.97.161.71:443 shut down
+  2016-12-30 11:02:21 - [124116] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 1][route: {s}->https://api.dinghuo123.com] can be kept alive for 9223372036854775807 MILLISECONDS
+  2016-12-30 11:02:21 - [124116] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(169) -Connection 0.0.0.0:50825<->180.97.161.71:443 closed
+  2016-12-30 11:02:21 - [124116] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 1][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:02:21 - [124121] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(169) -Connection 0.0.0.0:50826<->180.97.161.71:443 closed
+  2016-12-30 11:02:21 - [124121] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(716) -Closing the connection.
+  2016-12-30 11:02:21 - [124121] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(169) -Connection 0.0.0.0:50826<->180.97.161.71:443 closed
+  2016-12-30 11:02:21 - [124122] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(154) -Connection 0.0.0.0:50826<->180.97.161.71:443 shut down
+  2016-12-30 11:02:21 - [124122] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 0][route: {s}->https://api.dinghuo123.com] can be kept alive for 9223372036854775807 MILLISECONDS
+  2016-12-30 11:02:21 - [124122] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(169) -Connection 0.0.0.0:50826<->180.97.161.71:443 closed
+  2016-12-30 11:02:21 - [124123] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 0][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 0 of 80; total allocated: 0 of 200]
+  2016-12-30 11:02:21 - [124124] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -耗时：21335毫秒。
+  2016-12-30 11:02:21 - [124124] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -nullJob执行失败：失败原因：null
+  2016-12-30 11:02:21 - [124124] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -Token.java(51) -检查token是否过期
+  2016-12-30 11:02:21 - [124125] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:02:21 - [124125] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 0 of 80; total allocated: 0 of 200]
+  2016-12-30 11:02:21 - [124125] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:02:21 - [124128] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnectionOperator -DefaultClientConnectionOperator.java(177) -Connecting to api.dinghuo123.com:443
+  2016-12-30 11:02:21 - [124129] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -耗时：21337毫秒。
+  2016-12-30 11:02:21 - [124129] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -nullJob执行失败：失败原因：null
+  2016-12-30 11:02:21 - [124164] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:02:21 - [124165] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:02:21 - [124165] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:02:21 - [124165] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:02:21 - [124165] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:02:21 - [124165] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:02:21 - [124166] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:02:21 - [124166] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:02:21 - [124166] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:02:21 - [124166] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:02:21 - [124166] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:02:21 - [124167] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:02:21 - [124432] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:02:21 - [124432] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:02:21 - [124432] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:02:21 GMT
+  2016-12-30 11:02:21 - [124432] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:02:21 - [124433] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 228
+  2016-12-30 11:02:21 - [124433] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:02:21 - [124433] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAMO7BlgtPA8ABg4Nt5D0XpMeFqk6; Path=/; HttpOnly
+  2016-12-30 11:02:21 - [124433] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:02:21 - [124433] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:02:21 - [124434] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:02:21 - [124434] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=C462050BBBD6C075244E2F429CD9C0A5; Path=/; HttpOnly
+  2016-12-30 11:02:21 - [124434] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:02:21 - [124434] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:02:21 - [124434] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460623
+  2016-12-30 11:02:21 - [124435] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 57
+  2016-12-30 11:02:21 - [124435] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 60
+  2016-12-30 11:02:21 - [124435] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:02:21 - [124436] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:02:21 - [124436] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:02:21 - [124436] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:02:21 - [124436] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":{"access_token":"63b8488ecfd25dd5287ed48d04c41d91","expires_in":2592000,"scope":"basic","refresh_token":"c913e7a30a2a4df383a95cb79095f66b","create_time":1483066941011,"nodeCode":"hw"},"code":200,"message":"操作成功"}
+  2016-12-30 11:02:21 - [124437] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -Token.java(51) -检查token是否过期
+  2016-12-30 11:02:21 - [124438] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:02:21 - [124439] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:02:21 - [124440] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:02:21 - [124440] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:02:21 - [124442] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:02:21 - [124442] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:02:21 - [124442] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:02:21 - [124442] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:02:21 - [124443] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:02:21 - [124443] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:02:21 - [124443] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:02:21 - [124444] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:02:21 - [124444] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:02:21 - [124444] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:02:21 - [124444] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:02:21 - [124444] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:02:21 - [124616] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:02:21 - [124617] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:02:21 - [124617] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:02:21 GMT
+  2016-12-30 11:02:21 - [124617] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:02:21 - [124617] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 228
+  2016-12-30 11:02:21 - [124618] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:02:21 - [124618] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAF92ximi3AIABg4Nt4rLocfoyGYn; Path=/; HttpOnly
+  2016-12-30 11:02:21 - [124619] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:02:21 - [124619] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:02:21 - [124620] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:02:21 - [124620] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=06204E61AB12F8FE6790C23979E2614E; Path=/; HttpOnly
+  2016-12-30 11:02:21 - [124620] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:02:21 - [124620] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:02:21 - [124621] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460623
+  2016-12-30 11:02:21 - [124621] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 56
+  2016-12-30 11:02:21 - [124621] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 60
+  2016-12-30 11:02:21 - [124621] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:02:21 - [124621] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:02:21 - [124622] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:02:21 - [124622] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:02:21 - [124622] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":{"access_token":"a296562aa287edda7953127c68b340f5","expires_in":2592000,"scope":"basic","refresh_token":"976fa5acc09596ab046ab52fbbde4aa8","create_time":1483066941199,"nodeCode":"hw"},"code":200,"message":"操作成功"}
+  2016-12-30 11:03:00 - [162789] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -开始执行Job：null
+  2016-12-30 11:03:00 - [162790] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -Job 参数：
+  2016-12-30 11:03:00 - [162790] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -执行Job时间：2016-12-30 11:03:00
+  2016-12-30 11:03:00 - [162790] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:03:00 - [162791] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:03:00 - [162791] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:03:00 - [162791] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [162792] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -开始执行Job：null
+  2016-12-30 11:03:00 - [162793] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -Job 参数：
+  2016-12-30 11:03:00 - [162793] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -执行Job时间：2016-12-30 11:03:00
+  2016-12-30 11:03:00 - [162796] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:03:00 - [162796] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 1 of 80; total allocated: 1 of 200]
+  2016-12-30 11:03:00 - [162796] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [162797] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [162797] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [162797] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [162798] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [162798] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [162801] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:03:00 - [162801] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnectionOperator -DefaultClientConnectionOperator.java(177) -Connecting to api.dinghuo123.com:443
+  2016-12-30 11:03:00 - [162802] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:03:00 - [162802] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:03:00 - [162803] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [162803] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:03:00 - [162803] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [162803] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [162838] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [162838] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [162838] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [162839] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [162839] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [162839] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:03:00 - [162839] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:03:00 - [162840] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:03:00 - [162840] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [162840] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:03:00 - [162840] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [162841] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163011] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163012] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163012] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:02:59 GMT
+  2016-12-30 11:03:00 - [163012] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163012] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 228
+  2016-12-30 11:03:00 - [163013] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163013] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAALV3Pkd+WQgABg4Nt5ws71wMhO7F; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163013] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163014] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:03:00 - [163014] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163014] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=E09A7FA508CDFC04CC75D96ED3186B4C; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163014] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163015] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163015] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460623
+  2016-12-30 11:03:00 - [163015] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 55
+  2016-12-30 11:03:00 - [163015] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 60
+  2016-12-30 11:03:00 - [163016] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163016] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163016] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163017] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163017] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":{"access_token":"4928df796f7a1b892f9800100433efd4","expires_in":2592000,"scope":"basic","refresh_token":"7e5c1420428e279dfa1ad6156e6fcab3","create_time":1483066979559,"nodeCode":"hw"},"code":200,"message":"操作成功"}
+  2016-12-30 11:03:00 - [163018] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_type_list.json?verbose=true&access_token=4928df796f7a1b892f9800100433efd4
+  2016-12-30 11:03:00 - [163018] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163018] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163019] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [163019] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -Token.java(51) -检查token是否过期
+  2016-12-30 11:03:00 - [163020] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [163020] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [163020] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163020] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163021] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [163021] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163021] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163022] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [163022] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 4928df796f7a1b892f9800100433efd4
+  2016-12-30 11:03:00 - [163022] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [163022] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163185] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163185] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163186] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:02:59 GMT
+  2016-12-30 11:03:00 - [163186] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163186] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 1295
+  2016-12-30 11:03:00 - [163186] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163187] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAOWq5D85rwsABg4Nt4RJ7z4xCPHE; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163187] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163187] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:03:00 - [163188] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163188] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=027F7B22F66162CCE87F33E2D858D9B5; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163189] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163189] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163189] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:03:00 - [163189] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4991
+  2016-12-30 11:03:00 - [163190] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:03:00 - [163190] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163190] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163191] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163191] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163192] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":6353396,"isDefault":"","leafTypeFlag":"0","modifyTime":null,"name":"智能电子锁","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353392,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353402,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号相关联产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":3303044,"isDefault":"1","leafTypeFlag":"1","modifyTime":null,"name":"其他产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353397,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"家用","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353398,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"酒店","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353399,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"公寓","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353400,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"配件","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2}],"offset":0,"size":8},"message":"操作成功"}
+  2016-12-30 11:03:00 - [163192] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_unit_list.json?verbose=true&access_token=4928df796f7a1b892f9800100433efd4
+  2016-12-30 11:03:00 - [163193] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163193] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163193] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [163194] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163194] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163194] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:02:59 GMT
+  2016-12-30 11:03:00 - [163195] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163195] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 228
+  2016-12-30 11:03:00 - [163195] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163195] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAEGxhnk6KgoABg4Nt51LqOi9Dh5l; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163196] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163196] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=dd; Path=/
+  2016-12-30 11:03:00 - [163196] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163197] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=25C02607378ADE19B2736281CD406CDF; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163197] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163197] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163197] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483068779662
+  2016-12-30 11:03:00 - [163198] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 44
+  2016-12-30 11:03:00 - [163198] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 60
+  2016-12-30 11:03:00 - [163198] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163198] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [163199] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [163198] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163199] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163199] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 3][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163200] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163200] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163200] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":{"access_token":"b98350ffbce8df05d6310eb9d5b0702f","expires_in":2592000,"scope":"basic","refresh_token":"a87d88e7323395cf4cb0cc02774fb5f2","create_time":1483066979738,"nodeCode":"dd"},"code":200,"message":"操作成功"}
+  2016-12-30 11:03:00 - [163200] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [163201] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -Token.java(51) -检查token是否过期
+  2016-12-30 11:03:00 - [163201] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_type_list.json?verbose=true&access_token=b98350ffbce8df05d6310eb9d5b0702f
+  2016-12-30 11:03:00 - [163201] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163201] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163202] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163202] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163202] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [163202] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [163203] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 4928df796f7a1b892f9800100433efd4
+  2016-12-30 11:03:00 - [163206] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [163206] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [163206] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163207] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [163207] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163207] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163208] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [163208] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163208] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163208] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [163209] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: b98350ffbce8df05d6310eb9d5b0702f
+  2016-12-30 11:03:00 - [163209] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [163209] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:02:59 GMT
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 281
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAPPs7BVPgQ4ABg4NtwAC7Pkvc9B6; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=1009F32B44F8C6FBAF96E730D6068F79; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4990
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":1345895,"name":"把","status":"0"},{"id":1345894,"name":"个","status":"0"},{"id":1345886,"name":"套","status":"0"},{"id":1345856,"name":"箱","status":"0"},{"id":1290377,"name":"件","status":"0"}],"offset":0,"size":5},"message":"操作成功"}
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/inventory/warehouse.json?verbose=true&access_token=4928df796f7a1b892f9800100433efd4
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163270] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 4928df796f7a1b892f9800100433efd4
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [163286] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163301] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163301] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:03:00 GMT
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 1295
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAAMOJic7gA4ABg4NtwY8mLOeRiCd; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=dd; Path=/
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=DB265635BF6BB1FD670DFD3496681DFF; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483069379924
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4961
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 3][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":6353396,"isDefault":"","leafTypeFlag":"0","modifyTime":null,"name":"智能电子锁","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353392,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353402,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号相关联产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":3303044,"isDefault":"1","leafTypeFlag":"1","modifyTime":null,"name":"其他产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353397,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"家用","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353398,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"酒店","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353399,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"公寓","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353400,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"配件","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2}],"offset":0,"size":8},"message":"操作成功"}
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_unit_list.json?verbose=true&access_token=b98350ffbce8df05d6310eb9d5b0702f
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163317] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: b98350ffbce8df05d6310eb9d5b0702f
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:03:00 GMT
+  2016-12-30 11:03:00 - [163333] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 194
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAPQRrQI+fAAABg4Nt+JRkyv7Jm0u; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=0AE2772C8058A3727EAA427F4971599F; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4989
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":[{"address":"","createTime":"2016-11-10 17:27:29","id":514529,"isDefault":true,"modifyTime":"2016-11-10 17:27:29","name":"默认仓","number":"001"}],"message":"操作成功"}
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - java.sql.Connection -JakartaCommonsLoggingImpl.java(27) -{conn-100003} Connection
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - java.sql.Connection -JakartaCommonsLoggingImpl.java(27) -{conn-100003} Preparing Statement:    select    cs.autoid as id,   '001'  as wareHouseNumber,   m.cinvdefine5 as code,   cs.iquantity as count  from CurrentStock cs  right join Inventory m on m.cinvcode = cs.cinvcode  where m.cinvdefine5 is not null and cs.cwhcode = '05'     
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - java.sql.PreparedStatement -JakartaCommonsLoggingImpl.java(27) -{pstm-100004} Executing Statement:    select    cs.autoid as id,   '001'  as wareHouseNumber,   m.cinvdefine5 as code,   cs.iquantity as count  from CurrentStock cs  right join Inventory m on m.cinvcode = cs.cinvcode  where m.cinvdefine5 is not null and cs.cwhcode = '05'     
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - java.sql.PreparedStatement -JakartaCommonsLoggingImpl.java(27) -{pstm-100004} Parameters: []
+  2016-12-30 11:03:00 - [163348] - [DEBUG] - java.sql.PreparedStatement -JakartaCommonsLoggingImpl.java(27) -{pstm-100004} Types: []
+  2016-12-30 11:03:00 - [163379] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163379] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163379] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:03:00 GMT
+  2016-12-30 11:03:00 - [163379] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163379] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 281
+  2016-12-30 11:03:00 - [163379] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163379] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAIsO3gFnSAEABg4Nt060w/oIHSHW; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163379] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=dd; Path=/
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=18AE9C54C3DED8397D7A127A5970D24F; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483069379924
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4960
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 3][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":1345895,"name":"把","status":"0"},{"id":1345894,"name":"个","status":"0"},{"id":1345886,"name":"套","status":"0"},{"id":1345856,"name":"箱","status":"0"},{"id":1290377,"name":"件","status":"0"}],"offset":0,"size":5},"message":"操作成功"}
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/inventory/warehouse.json?verbose=true&access_token=b98350ffbce8df05d6310eb9d5b0702f
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163395] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: b98350ffbce8df05d6310eb9d5b0702f
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/goods/goods_inventory_batch.json?productEntries=%5B%7B%22wareHouseNumber%22%3A%22001%22%2C%22goodsCode%22%3A%22SKY-001-RFPDA-C%22%2C%22inventoryCount%22%3A%22162.000000%22%7D%2C%7B%22wareHouseNumber%22%3A%22001%22%2C%22goodsCode%22%3A%22SKY-001-RFPDA-S%22%2C%22inventoryCount%22%3A%22195.000000%22%7D%5D&handler&warehouseId=514529&verbose=true
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163411] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/goods/goods_inventory_batch.json HTTP/1.1
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/goods/goods_inventory_batch.json HTTP/1.1
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 4928df796f7a1b892f9800100433efd4
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 310
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [163426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:03:00 GMT
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 194
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAJAZTUssXAIABg4Ntx43H8nO4wAu; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=dd; Path=/
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=DDB5396FDD7F492FB5AA35B992297D47; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483069379924
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4959
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 3][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":[{"address":"","createTime":"2016-11-10 17:27:29","id":514529,"isDefault":true,"modifyTime":"2016-11-10 17:27:29","name":"默认仓","number":"001"}],"message":"操作成功"}
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true&access_token=b98350ffbce8df05d6310eb9d5b0702f
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163457] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true HTTP/1.1
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: b98350ffbce8df05d6310eb9d5b0702f
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:03:00 - [163473] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:03:00 GMT
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 100
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAP9a7g3JoQIABg4Nt7urhCVvMv7x; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=DDD825409C55E05585A07EF8F7CE50AC; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:03:00 - [163489] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4988
+  2016-12-30 11:03:00 - [163504] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:03:00 - [163504] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163504] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163504] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163504] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163504] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":[],"code":200,"message":"成功导入2个商品的库存，导入失败有0个商品库存"}
+  2016-12-30 11:03:00 - [163504] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -nullJob执行成功，耗时：715毫秒。
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:03:00 GMT
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 47
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAALKKSVdoTgMABg4Nt/yZHKjyp9Q9; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=dd; Path=/
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=DD456B0F063D4D14B03191795DE5314B; Path=/; HttpOnly
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483069379924
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4958
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 3][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:03:00 - [163535] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":[],"message":"操作成功"}
+  2016-12-30 11:03:00 - [163535] - [ERROR] - com.ircloud.ydh.exchange.job.AbstractJob -AbstractJob.java(260) -账号：创维安防   无新增订单可以同步
+  2016-12-30 11:03:00 - [163535] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -nullJob执行成功，耗时：743毫秒。
+  2016-12-30 11:04:00 - [222790] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -开始执行Job：null
+  2016-12-30 11:04:00 - [222790] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -Job 参数：
+  2016-12-30 11:04:00 - [222790] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -执行Job时间：2016-12-30 11:04:00
+  2016-12-30 11:04:00 - [222791] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:04:00 - [222791] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 2; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [222791] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 3][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [222792] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:04:00 - [222793] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:04:00 - [222793] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:04:00 - [222793] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [222793] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [222794] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:04:00 - [222794] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:04:00 - [222794] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:04:00 - [222795] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:04:00 - [222795] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:04:00 - [222795] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:04:00 - [222795] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:04:00 - [222795] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:04:00 - [222796] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -开始执行Job：null
+  2016-12-30 11:04:00 - [222796] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -Job 参数：
+  2016-12-30 11:04:00 - [222796] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -执行Job时间：2016-12-30 11:04:00
+  2016-12-30 11:04:00 - [222797] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(409) -doPost https://api.dinghuo123.com/v2/oauth2/token?client_id=4086724&client_secret=tMMnnLJ3kD97WS1AHAokNY14E8Dk7ftT&grant_type=client_credentials&password=skywqx3652369&userName=310229418&verbose=true
+  2016-12-30 11:04:00 - [222797] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [222797] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [222798] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:04:00 - [222798] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(467) -Stale connection detected
+  2016-12-30 11:04:00 - [222798] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(169) -Connection 0.0.0.0:51634<->180.97.161.71:443 closed
+  2016-12-30 11:04:00 - [222800] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnectionOperator -DefaultClientConnectionOperator.java(177) -Connecting to api.dinghuo123.com:443
+  2016-12-30 11:04:00 - [222835] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:04:00 - [222835] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:04:00 - [222836] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [222836] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [222836] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:04:00 - [222836] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:04:00 - [222837] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> POST /v2/oauth2/token HTTP/1.1
+  2016-12-30 11:04:00 - [222837] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  2016-12-30 11:04:00 - [222837] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:04:00 - [222837] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Content-Length: 149
+  2016-12-30 11:04:00 - [222838] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:04:00 - [222838] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:04:00 - [223104] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223104] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223104] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:03:59 GMT
+  2016-12-30 11:04:00 - [223105] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:04:00 - [223105] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 228
+  2016-12-30 11:04:00 - [223105] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:04:00 - [223107] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAHmbM0oCMgoABg4Ntxf41Fu+Q5gI; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223107] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:04:00 - [223107] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:04:00 - [223108] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:04:00 - [223108] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=1A98D7477C85828B3B05E5B750FCB331; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223108] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:04:00 - [223108] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:04:00 - [223109] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460623
+  2016-12-30 11:04:00 - [223109] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 54
+  2016-12-30 11:04:00 - [223109] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 60
+  2016-12-30 11:04:00 - [223109] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:04:00 - [223110] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223110] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223110] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223111] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"data":{"access_token":"35bf6bbcf06143a74b695e95a15463ce","expires_in":2592000,"scope":"basic","refresh_token":"217ad263311c54281b9416fba25e9a57","create_time":1483067039681,"nodeCode":"hw"},"code":200,"message":"操作成功"}
+  2016-12-30 11:04:00 - [223111] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_type_list.json?verbose=true&access_token=35bf6bbcf06143a74b695e95a15463ce
+  2016-12-30 11:04:00 - [223112] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223112] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223112] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:04:00 - [223113] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -Token.java(51) -检查token是否过期
+  2016-12-30 11:04:00 - [223114] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:04:00 - [223114] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:04:00 - [223114] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [223114] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [223115] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:04:00 - [223115] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:04:00 - [223115] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_type_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:04:00 - [223115] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:04:00 - [223116] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 35bf6bbcf06143a74b695e95a15463ce
+  2016-12-30 11:04:00 - [223116] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:04:00 - [223116] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:04:00 - [223280] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223280] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223280] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:03:59 GMT
+  2016-12-30 11:04:00 - [223280] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:04:00 - [223281] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 1295
+  2016-12-30 11:04:00 - [223281] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:04:00 - [223281] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAKvvYy4CFQ0ABg4Ntz5bT9uzWt/H; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223281] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:04:00 - [223282] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:04:00 - [223282] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:04:00 - [223282] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=DBED12874A7A85113F612308AC9B52F4; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223282] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:04:00 - [223283] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:04:00 - [223283] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:04:00 - [223283] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4987
+  2016-12-30 11:04:00 - [223283] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:04:00 - [223283] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:04:00 - [223284] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223285] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223285] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223285] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":6353396,"isDefault":"","leafTypeFlag":"0","modifyTime":null,"name":"智能电子锁","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353392,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353402,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"控智一号相关联产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":3303044,"isDefault":"1","leafTypeFlag":"1","modifyTime":null,"name":"其他产品","parentTypeId":0,"status":"0","subTypeList":[],"typeLevel":1},{"id":6353397,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"家用","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353398,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"酒店","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353399,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"公寓","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2},{"id":6353400,"isDefault":"","leafTypeFlag":"1","modifyTime":null,"name":"配件","parentTypeId":6353396,"status":"0","subTypeList":[],"typeLevel":2}],"offset":0,"size":8},"message":"操作成功"}
+  2016-12-30 11:04:00 - [223289] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/goods/goods_unit_list.json?verbose=true&access_token=35bf6bbcf06143a74b695e95a15463ce
+  2016-12-30 11:04:00 - [223289] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223289] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223290] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:04:00 - [223291] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:04:00 - [223291] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:04:00 - [223291] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [223291] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [223295] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:04:00 - [223295] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:04:00 - [223295] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/goods/goods_unit_list.json?verbose=true HTTP/1.1
+  2016-12-30 11:04:00 - [223295] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:04:00 - [223296] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 35bf6bbcf06143a74b695e95a15463ce
+  2016-12-30 11:04:00 - [223296] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:04:00 - [223296] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:04:00 - [223358] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223358] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223358] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:04:00 GMT
+  2016-12-30 11:04:00 - [223359] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:04:00 - [223359] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 281
+  2016-12-30 11:04:00 - [223359] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:04:00 - [223359] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAGXd8kADkgAABg4Nt1wqdOTtHIad; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223360] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:04:00 - [223360] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:04:00 - [223360] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:04:00 - [223360] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=3C9EB605B83E79349F2563E14DB6E2D6; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223361] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:04:00 - [223361] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:04:00 - [223361] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:04:00 - [223361] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4986
+  2016-12-30 11:04:00 - [223361] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:04:00 - [223362] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:04:00 - [223362] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223362] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223363] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223363] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":{"items":[{"id":1345895,"name":"把","status":"0"},{"id":1345894,"name":"个","status":"0"},{"id":1345886,"name":"套","status":"0"},{"id":1345856,"name":"箱","status":"0"},{"id":1290377,"name":"件","status":"0"}],"offset":0,"size":5},"message":"操作成功"}
+  2016-12-30 11:04:00 - [223363] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/inventory/warehouse.json?verbose=true&access_token=35bf6bbcf06143a74b695e95a15463ce
+  2016-12-30 11:04:00 - [223364] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223364] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223364] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:04:00 - [223365] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:04:00 - [223365] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:04:00 - [223366] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [223366] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [223366] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:04:00 - [223366] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:04:00 - [223367] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/inventory/warehouse.json?verbose=true HTTP/1.1
+  2016-12-30 11:04:00 - [223367] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:04:00 - [223368] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 35bf6bbcf06143a74b695e95a15463ce
+  2016-12-30 11:04:00 - [223368] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:04:00 - [223368] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:04:00 - [223426] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223426] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:04:00 GMT
+  2016-12-30 11:04:00 - [223427] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:04:00 - [223427] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 194
+  2016-12-30 11:04:00 - [223427] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:04:00 - [223427] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAANJcW0KmqgEABg4Nt8GwylgS9Yaw; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223427] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:04:00 - [223428] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:04:00 - [223428] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:04:00 - [223428] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=15E4FCBCADFA55BD3C00FC429A2F8537; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223428] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:04:00 - [223429] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:04:00 - [223429] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:04:00 - [223429] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4985
+  2016-12-30 11:04:00 - [223429] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:04:00 - [223430] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:04:00 - [223430] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223430] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223431] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223431] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":[{"address":"","createTime":"2016-11-10 17:27:29","id":514529,"isDefault":true,"modifyTime":"2016-11-10 17:27:29","name":"默认仓","number":"001"}],"message":"操作成功"}
+  2016-12-30 11:04:00 - [223432] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(403) -doGet https://api.dinghuo123.com/v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true&access_token=35bf6bbcf06143a74b695e95a15463ce
+  2016-12-30 11:04:00 - [223432] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(186) -Connection request: [route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223432] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(220) -Connection leased: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 0; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223432] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(465) -Stale connection check
+  2016-12-30 11:04:00 - [223434] - [DEBUG] - org.apache.http.client.protocol.RequestAddCookies -RequestAddCookies.java(132) -CookieSpec selected: ignoreCookies
+  2016-12-30 11:04:00 - [223434] - [DEBUG] - org.apache.http.client.protocol.RequestAuthCache -RequestAuthCache.java(78) -Auth cache not set in the context
+  2016-12-30 11:04:00 - [223434] - [DEBUG] - org.apache.http.client.protocol.RequestTargetAuthentication -RequestTargetAuthentication.java(78) -Target auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [223435] - [DEBUG] - org.apache.http.client.protocol.RequestProxyAuthentication -RequestProxyAuthentication.java(87) -Proxy auth state: UNCHALLENGED
+  2016-12-30 11:04:00 - [223435] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(710) -Attempt 1 to execute request
+  2016-12-30 11:04:00 - [223435] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(269) -Sending request: GET /v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true HTTP/1.1
+  2016-12-30 11:04:00 - [223435] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(273) ->> GET /v2/order/pull_order.json?transportType=tcp&size=1000&loadLog=true&verbose=true HTTP/1.1
+  2016-12-30 11:04:00 - [223436] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> User-Agent: YDH-Clinet
+  2016-12-30 11:04:00 - [223436] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> access_token: 35bf6bbcf06143a74b695e95a15463ce
+  2016-12-30 11:04:00 - [223436] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Host: api.dinghuo123.com
+  2016-12-30 11:04:00 - [223436] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(276) ->> Connection: Keep-Alive
+  2016-12-30 11:04:00 - [223497] - [DEBUG] - org.apache.http.impl.conn.DefaultClientConnection -DefaultClientConnection.java(254) -Receiving response: HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223497] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(257) -<< HTTP/1.1 200 OK
+  2016-12-30 11:04:00 - [223498] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Date: Fri, 30 Dec 2016 03:04:00 GMT
+  2016-12-30 11:04:00 - [223498] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Type: application/json;charset=utf-8
+  2016-12-30 11:04:00 - [223498] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Content-Length: 47
+  2016-12-30 11:04:00 - [223498] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Connection: keep-alive
+  2016-12-30 11:04:00 - [223499] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: aliyungf_tc=AQAAAC+xI2RWtgIABg4Nt/TQiKofDyZs; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223499] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Server: nginx
+  2016-12-30 11:04:00 - [223499] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: serverNode=hw; Path=/
+  2016-12-30 11:04:00 - [223499] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Business-Status: 200
+  2016-12-30 11:04:00 - [223499] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Set-Cookie: JSESSIONID=CF0F3736A0057D7318169C3EB5547302; Path=/; HttpOnly
+  2016-12-30 11:04:00 - [223500] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache-Control: no-cache
+  2016-12-30 11:04:00 - [223500] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< Cache -Control: no-cache
+  2016-12-30 11:04:00 - [223500] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Reset: 1483070460883
+  2016-12-30 11:04:00 - [223500] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Remaining: 4984
+  2016-12-30 11:04:00 - [223501] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< X-RateLimit-Limit: 5000
+  2016-12-30 11:04:00 - [223501] - [DEBUG] - org.apache.http.headers -DefaultClientConnection.java(260) -<< api-version: v2
+  2016-12-30 11:04:00 - [223501] - [DEBUG] - org.apache.http.impl.client.DefaultHttpClient -DefaultRequestDirector.java(540) -Connection can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223501] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(272) -Connection [id: 2][route: {s}->https://api.dinghuo123.com] can be kept alive indefinitely
+  2016-12-30 11:04:00 - [223502] - [DEBUG] - org.apache.http.impl.conn.PoolingClientConnectionManager -PoolingClientConnectionManager.java(278) -Connection released: [id: 2][route: {s}->https://api.dinghuo123.com][total kept alive: 1; route allocated: 2 of 80; total allocated: 2 of 200]
+  2016-12-30 11:04:00 - [223502] - [DEBUG] - com.ircloud.ydh.sdk4j.http.YDHHttpClient -YDHHttpClient.java(371) -http response: {"code":200,"data":[],"message":"操作成功"}
+  2016-12-30 11:04:00 - [223502] - [ERROR] - com.ircloud.ydh.exchange.job.AbstractJob -AbstractJob.java(260) -账号：创维安防   无新增订单可以同步
+  2016-12-30 11:04:00 - [223521] - [ INFO] - com.ircloud.ydh.exchange.job.AbstractJob -JobUtil.java(52) -nullJob执行成功，耗时：725毫秒。
+  

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="U8Order">
+    <typeAlias alias="Order" type="com.ircloud.ydh.sdk4j.model.Order"/>
+    <typeAlias alias="OrderDetail" type="com.ircloud.ydh.sdk4j.model.OrderDetail"/>
+
+  	<sql id="Base_Columns">
+		id,
+		ivtid,
+		cchanger,
+		cbustype,
+		ccrechpname,
+		cstcode,
+		ddate,
+		csocode,
+		ccuscode,
+		cdepcode,
+		cpersoncode,
+		csccode,
+		ccusoaddress,
+		cpaycode,
+		cexch_name,
+		iexchrate,
+		itaxrate,
+		imoney,
+		cmemo,
+		istatus,
+		cmaker,
+		cverifier,
+		ccloser,
+		cdefine1,
+		cdefine2,
+		cdefine3,
+		cdefine4,
+		cdefine5,
+		cdefine6,
+		cdefine7,
+		cdefine8,
+		cdefine9,
+		cdefine10,
+		cdefine11,
+		cdefine12,
+		cdefine13,
+		cdefine14,
+		cdefine15,
+		cdefine16,
+		dpredatebt,
+		dpremodatebt,
+		bdisflag,
+		clocker,
+		ccusname,
+		breturnflag,
+		coppcode
+	</sql>
+
+
+	
+	<sql id="Detail_Base_Columns">
+        csocode,
+		cinvcode,
+		dpredate,
+		iquantity,
+		inum,
+		iquotedprice,
+		iunitprice,
+		itaxunitprice,
+		imoney,
+		itax,
+		isum,
+		idiscount,
+		inatunitprice,
+		inatmoney,
+		inattax,
+		inatsum,
+		inatdiscount,
+		ifhnum,
+		ifhquantity,
+		ifhmoney,
+		ikpquantity,
+		ikpnum,
+		ikpmoney,
+		cmemo,
+		cfree1,
+		cfree2,
+		isosid,
+		kl,
+		kl2,
+		cinvname,
+		itaxrate,
+		cdefine22,
+		cdefine23,
+		cdefine24,
+		cdefine25,
+		cdefine26,
+		cdefine27,
+		citemcode,
+		citem_class,
+		citemname,
+		citem_cname,
+		cfree3,
+		cfree4,
+		cfree5,
+		cfree6,
+		cfree7,
+		cfree8,
+		cfree9,
+		cfree10,
+		iinvexchrate,
+		cunitid,
+		id,
+		cdefine28,
+		cdefine29,
+		cdefine30,
+		cdefine31,
+		cdefine32,
+		cdefine33,
+		cdefine34,
+		cdefine35,
+		cdefine36,
+		cdefine37,
+		fpurquan,
+		fsalecost,
+		fsaleprice,
+		cquocode,
+		iquoid,
+		cscloser,
+		dpremodate,
+		irowno,
+		icusbomid,
+		imoquantity,
+		ccontractid,
+		ccontracttagcode,
+		ccontractrowguid,
+		ippartseqid,
+		ippartid,
+		ippartqty,
+		ccusinvcode,
+		ccusinvname,
+		iprekeepquantity,
+		iprekeepnum,
+		iprekeeptotquantity,
+		iprekeeptotnum
+	</sql>
+  
+    <insert id="saveOrder" parameterClass="Order">
+		insert into SO_SOMain(<include refid="Base_Columns"/>)
+        select
+			(select top 1 max(maxorderid) from YDH_Max_OrderID),
+			95,
+			Null,
+			N'普通销售',
+			Null,
+			N'01',
+			CONVERT(char,#createTime#,23),
+			#orderNum#,
+			#customer.code#,
+			N'03',
+			Null,
+			Null,
+			'收货人：'+#contact#+',联系电话：'+#mobile#+',收货地址：'+#area#+#address#,
+			Null,
+			N'人民币',
+			1,
+			17,
+			Null,
+			#remark#,
+			Null,
+			N'张三',
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			CONVERT(char,#createTime#,23),
+			CONVERT(char,#createTime#,23),
+			0,
+			Null,
+			(select ccusname from customer where cCusCode = #customer.code#),
+			0,
+			Null
+	</insert>
+
+    
+ 
+    <insert id="saveOrderDetail" parameterClass="OrderDetail">
+		insert into SO_SODetails(<include refid="Detail_Base_Columns"/>)
+        select
+			#orderNum#,
+			(select cinvcode from inventory where cinvdefine5 = #productCode#),
+			CONVERT(char,#createTime#,23),
+			#count#,
+			Null,
+			0,
+			#price#/1.17,
+			#price#,
+			(#price#/1.17)*#count#,
+			(0.17/1.17)*#price#*#count#,
+			#price#*#count#,
+			0,
+			#price#/1.17,
+			(#price#/1.17)*#count#,
+			(0.17/1.17)*#price#*#count#,
+			#price#*#count#,
+			0,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			isnull((select max(isosid)+1  from SO_SODetails), 1),
+			100,
+			100,
+			(select cinvname from Inventory where cinvcode = #productCode#),
+			17,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			(select id from SO_SOMain where csocode = #orderNum#),
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			0,
+			0,
+			Null,
+			Null,
+			Null,
+			CONVERT(char,#createTime#,23),
+			isnull((select MAX(irowno)+1 from SO_SODetails where csocode = #orderNum#), 1),
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null,
+			Null
+    </insert>
+ 	
+
+    
+    <!-- 删除订货单 -->
+    <update id="deleteOrders" parameterClass="java.util.List">
+      DELETE FROM SO_SOMain WHERE csocode in
+      <iterate conjunction="," open="(" close=")">
+         #list[].orderNum#
+      </iterate>
+    </update>   
+    
+    <update id="deleteOrderDetails" parameterClass="java.util.List">
+      DELETE FROM SO_SODetails WHERE csocode in 
+	      <iterate conjunction="," open="(" close=")">
+	         #list[].orderNum#	         
+	      </iterate>
+    </update>
+	
+	
+    <!-- 删除退货单 -->
+	<update id="deleteReturnOrders" parameterClass="java.util.List">
+      DELETE FROM t_sale_bill WHERE FORDERNUM in
+      <iterate conjunction="," open="(" close=")">
+         #list[].orderNum#
+      </iterate>
+    </update>   
+    
+    <update id="deleteReturnOrderDetails" parameterClass="java.util.List">
+      DELETE FROM t_sale_bill_detail WHERE FID in (select FID from t_sale_bill where FORDERNUM in
+	      <iterate conjunction="," open="(" close=")">
+	         #list[].orderNum#	         
+	      </iterate>
+	  )
+    </update>
+    
+	<!-- 执行存储过程（插入前） -->
+	<select id="excuteProcedureBeforeInsert" parameterClass="Order">
+	    exec UFDATA_999_2015.dbo.Get_YDHOrder_MaxID #orderNum#, #type#, #productTypeCount#
+	</select>
+	
+
+    <resultMap id="findAllCancelOrder" class="Order">  
+      <result property="orderNum" column="orderNum" javaType="java.lang.String" />  
+    </resultMap>
+    
+    <select id="findAllCancelOrder" parameterClass="int" resultMap="findAllCancelOrder">
+       
+    </select>
+    
+</sqlMap>
