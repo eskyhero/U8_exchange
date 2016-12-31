@@ -24,7 +24,6 @@
 		iexchrate,
 		itaxrate,
 		imoney,
-		cmemo,
 		istatus,
 		cmaker,
 		cverifier,
@@ -51,6 +50,7 @@
 		clocker,
 		ccusname,
 		breturnflag,
+		cMemo,
 		coppcode
 	</sql>
 
@@ -109,7 +109,6 @@
 		iinvexchrate,
 		cunitid,
 		id,
-		cdefine28,
 		cdefine29,
 		cdefine30,
 		cdefine31,
@@ -140,6 +139,7 @@
 		iprekeepquantity,
 		iprekeepnum,
 		iprekeeptotquantity,
+		cdefine28,
 		iprekeeptotnum
 	</sql>
   
@@ -155,7 +155,7 @@
 			CONVERT(char,#createTime#,23),
 			#orderNum#,
 			#customer.code#,
-			N'03',
+			N'34',
 			Null,
 			Null,
 			'收货人：'+#contact#+',联系电话：'+#mobile#+',收货地址：'+#area#+#address#,
@@ -166,7 +166,7 @@
 			Null,
 			#remark#,
 			Null,
-			N'张三',
+			N'易订货',
 			Null,
 			Null,
 			Null,
@@ -177,20 +177,27 @@
 			Null,
 			Null,
 			Null,
+			N'智控事业部',
 			Null,
 			Null,
 			Null,
 			Null,
 			Null,
 			Null,
-			Null,
-			Null,
-			CONVERT(char,#createTime#,23),
+			CONVERT(char,#deliveryDate#,23),
 			CONVERT(char,#createTime#,23),
 			0,
 			Null,
 			(select ccusname from customer where cCusCode = #customer.code#),
 			0,
+			<isEmpty property="remarks">
+				 <![CDATA[ '' ]]> 
+			</isEmpty>
+			<isNotEmpty property="remarks">
+				 <iterate property="remarks"   conjunction="+" >
+					#remarks[].content# + ' -- '
+				 </iterate>
+			</isNotEmpty>,
 			Null
 	</insert>
 
@@ -249,7 +256,6 @@
 			Null,
 			Null,
 			Null,
-			Null,
 			(select id from SO_SOMain where csocode = #orderNum#),
 			Null,
 			Null,
@@ -269,6 +275,7 @@
 			Null,
 			CONVERT(char,#createTime#,23),
 			isnull((select MAX(irowno)+1 from SO_SODetails where csocode = #orderNum#), 1),
+			Null,
 			Null,
 			Null,
 			Null,
@@ -321,7 +328,7 @@
     
 	<!-- 执行存储过程（插入前） -->
 	<select id="excuteProcedureBeforeInsert" parameterClass="Order">
-	    exec UFDATA_999_2015.dbo.Get_YDHOrder_MaxID #orderNum#, #type#, #productTypeCount#
+	    exec UFDATA_901_2015.dbo.Get_YDHOrder_MaxID #orderNum#, #type#, #productTypeCount#
 	</select>
 	
 
