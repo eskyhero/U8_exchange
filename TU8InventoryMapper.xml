@@ -11,14 +11,15 @@
     </resultMap>  
 
     <select id="findAllInventory" resultMap="resultmap" parameterClass="map">
-		select 
-		cs.autoid as id,
+	select 
+		cs.cInvCode as id,
 		'001'  as wareHouseNumber,
 		m.cinvdefine5 as code,
-		cs.iquantity as count
+		SUM(iQuantity)as count 
 	from CurrentStock cs
-	right join Inventory m on m.cinvcode = cs.cinvcode
+	left join (select cinvcode,cinvdefine5 from Inventory) m on m.cinvcode = cs.cinvcode
 	where m.cinvdefine5 is not null and cs.cwhcode = '05'
+	group by cs.cInvCode,m.cinvdefine5
     </select>
     
     <update id="updateSyncStatus" parameterClass="map">

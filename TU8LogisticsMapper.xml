@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="U8Logistics">
+
+    <typeAlias alias="LogisticsDetail" type="com.ircloud.ydh.sdk4j.model.Logistics$LogisticsDetail"></typeAlias>
+    <typeAlias alias="Logistics" type="com.ircloud.ydh.sdk4j.model.Logistics"></typeAlias>
+    
+    
+    <resultMap id="findLogistics" class="Logistics">  
+      <result property="billNum" column="billNum" javaType="java.lang.String" />
+      <result property="orderNum" column="orderNum" javaType="java.lang.String" />
+      <result property="sendCompany" column="sendCompany" javaType="java.lang.String" />
+      <result property="sendCompanyCode" column="sendCompanyCode" javaType="java.lang.String" />
+      <result property="sendNumber" column="sendNumber" javaType="java.lang.String" />
+      <result property="logisticsDetail" column="billNum" select="U8Logistics.findDemergedlogisticsDetail" javaType="java.util.List" />
+    </resultMap>
+    
+    <resultMap id="findLogisticsDetail" class="LogisticsDetail">  
+      <result property="billNum" column="billNum" javaType="java.lang.String" /> 
+      <result property="count" column="count" javaType="java.math.BigDecimal" />
+      <result property="productCode" column="productCode" javaType="java.lang.String" />
+    </resultMap>
+    
+    
+    <select id="findDemergedLogisticses" resultClass="Logistics" resultMap="findLogistics">
+        select 
+ cdlcode as billNum,
+ cSOCode  as orderNum,
+ '' as sendNumber,
+ dDate as sendDate,
+'' as sendCompanyCode,
+'' as sendCompany 
+ from dispatchlist where cdlcode like 'QFH%' and dDate > (GETDATE() - 5)
+    </select>
+    
+    <select id="findDemergedlogisticsDetail" parameterClass="String" resultClass="LogisticsDetail" resultMap="findLogisticsDetail">
+        select 
+ dispatchlist.cdlcode as billNum,
+ iQuantity as count,
+ cInvCode as productCode 
+ from dispatchlists 
+ inner join dispatchlist
+ on dispatchlist.DLID = dispatchlists.DLID where cdlcode=  #billNum#
+    </select>
+    
+    <select id="findOneTimeLogisticses" resultMap="findLogistics">
+       select * from t_sync_logistics where foutstatus = '1'
+    </select>
+
+</sqlMap>
