@@ -1,167 +1,167 @@
-INSERT INTO [UFDATA_998_2015].[dbo].[DispatchLists]
-           ([DLID]
-           ,[iCorID]
-           ,[cWhCode]
-           ,[cInvCode]
-           ,[iQuantity]
-           ,[iNum]
-           ,[iQuotedPrice]
-           ,[iUnitPrice]
-           ,[iTaxUnitPrice]
-           ,[iMoney]
-           ,[iTax]
-           ,[iSum]
-           ,[iDisCount]
-           ,[iNatUnitPrice]
-           ,[iNatMoney]
-           ,[iNatTax]
-           ,[iNatSum]
-           ,[iNatDisCount]
-           ,[iSettleNum]
-           ,[iSettleQuantity]
-           ,[iBatch]
-           ,[cBatch]
-           ,[bSettleAll]
-           ,[iTB]
-           ,[dvDate]
-           ,[TBQuantity]
-           ,[TBNum]
-           ,[iSOsID]
-           ,[iDLsID]
-           ,[KL]
-           ,[KL2]
-           ,[cInvName]
-           ,[iTaxRate]
-           ,[fOutQuantity]
-           ,[fOutNum]
-           ,[cItemCode]
-           ,[cItem_class]
-           ,[fSaleCost]
-           ,[fSalePrice]
-           ,[cVenAbbName]
-           ,[cItemName]
-           ,[cItem_CName]
-           ,[bIsSTQc]
-           ,[iInvExchRate]
-           ,[cUnitID]
-           ,[cCode]
-           ,[iRetQuantity]
-           ,[fEnSettleQuan]
-           ,[fEnSettleSum]
-           ,[iSettlePrice]
-           ,[dMDate]
-           ,[bGsp]
-           ,[cGspState]
-           ,[cSoCode]
-           ,[cCorCode]
-           ,[iPPartSeqID]
-           ,[iPPartID]
-           ,[iPPartQty]
-           ,[cContractID]
-           ,[cContractTagCode]
-           ,[cContractRowGuid]
-           ,[iMassDate]
-           ,[cMassUnit]
-           ,[bQANeedCheck]
-           ,[bQAUrgency]
-           ,[bQAChecking]
-           ,[bQAChecked]
-           ,[iQAQuantity]
-           ,[iQANum]
-           ,[cCusInvCode]
-           ,[cCusInvName]
-           ,[fsumsignquantity]
-           ,[fsumsignnum]
-           ,[cbaccounter]
-           ,[bcosting]
-           ,[cordercode]
-           ,[iorderrowno]
-           ,[fcusminprice]
-           ,[icostquantity]
-           ,[icostsum]
-           ,[ispecialtype]
-           ,[cvmivencode]
-           ,[iexchsum]
-           ,[imoneysum]
-           ,[irowno]
-           ,[frettbquantity]
-           ,[fretsum]
-           ,[iExpiratDateCalcu]
-           ,[dExpirationdate]
-           ,[cExpirationdate]
-           ,[cbatchproperty1]
-           ,[cbatchproperty2]
-           ,[cbatchproperty3]
-           ,[cbatchproperty4]
-           ,[cbatchproperty5]
-           ,[cbatchproperty6]
-           ,[cbatchproperty7]
-           ,[cbatchproperty8]
-           ,[cbatchproperty9]
-           ,[cbatchproperty10]
-           ,[dblPreExchMomey]
-           ,[dblPreMomey]
-           ,[idemandtype]
-           ,[cdemandcode]
-           ,[cdemandmemo]
-           ,[cdemandid]
-           ,[idemandseq]
-           ,[cvencode]
-           ,[cReasonCode]
-           ,[cInvSN]
-           ,[iInvSNCount]
-           ,[bneedsign]
-           ,[bsignover]
-           ,[bneedloss]
-           ,[flossrate]
-           ,[frlossqty]
-           ,[fulossqty]
-           ,[isettletype]
-           ,[crelacuscode]
-           ,[cLossMaker]
-           ,[dLossDate]
-           ,[dLossTime]
-           ,[icoridlsid]
-           ,[fretoutqty]
-           ,[body_outid]
-           ,[fVeriBillQty]
-           ,[fVeriBillSum]
-           ,[fVeriRetQty]
-           ,[fVeriRetSum]
-           ,[fLastSettleQty]
-           ,[fLastSettleSum]
-           ,[cBookWhcode]
-           ,[cInVouchType]
-           ,[cPosition]
-           ,[fretqtywkp]
-           ,[fretqtyykp]
-           ,[frettbqtyykp]
-           ,[fretsumykp]
-           ,[dkeepdate]
-           ,[cSCloser]
-           ,[isaleoutid]
-           ,[bsaleprice]
-           ,[bgift]
-           ,[bmpforderclosed]
-           ,[cbSysBarCode]
-           ,[fxjquantity]
-           ,[fxjnum]
-           ,[bIAcreatebill]
-           ,[cParentCode]
-           ,[cChildCode]
-           ,[fchildqty]
-           ,[fchildrate]
-           ,[iCalcType]
-           ,[fappretwkpqty]
-           ,[fappretwkpsum]
-           ,[fappretykpqty]
-           ,[fappretykpsum]
-           ,[fappretwkptbqty]
-           ,[fappretykptbqty]
-           ,[irtnappid]
-           ,[crtnappcode]
-           ,[fretailrealamount]
-           ,[fretailsettleamount])
+INSERT INTO DispatchLists
+           (DLID
+           ,iCorID
+           ,cWhCode
+           ,cInvCode
+           ,iQuantity
+           ,iNum
+           ,iQuotedPrice
+           ,iUnitPrice
+           ,iTaxUnitPrice
+           ,iMoney
+           ,iTax
+           ,iSum
+           ,iDisCount
+           ,iNatUnitPrice
+           ,iNatMoney
+           ,iNatTax
+           ,iNatSum
+           ,iNatDisCount
+           ,iSettleNum
+           ,iSettleQuantity
+           ,iBatch
+           ,cBatch
+           ,bSettleAll
+           ,iTB
+           ,dvDate
+           ,TBQuantity
+           ,TBNum
+           ,iSOsID
+           ,iDLsID
+           ,KL
+           ,KL2
+           ,cInvName
+           ,iTaxRate
+           ,fOutQuantity
+           ,fOutNum
+           ,cItemCode
+           ,cItem_class
+           ,fSaleCost
+           ,fSalePrice
+           ,cVenAbbName
+           ,cItemName
+           ,cItem_CName
+           ,bIsSTQc
+           ,iInvExchRate
+           ,cUnitID
+           ,cCode
+           ,iRetQuantity
+           ,fEnSettleQuan
+           ,fEnSettleSum
+           ,iSettlePrice
+           ,dMDate
+           ,bGsp
+           ,cGspState
+           ,cSoCode
+           ,cCorCode
+           ,iPPartSeqID
+           ,iPPartID
+           ,iPPartQty
+           ,cContractID
+           ,cContractTagCode
+           ,cContractRowGuid
+           ,iMassDate
+           ,cMassUnit
+           ,bQANeedCheck
+           ,bQAUrgency
+           ,bQAChecking
+           ,bQAChecked
+           ,iQAQuantity
+           ,iQANum
+           ,cCusInvCode
+           ,cCusInvName
+           ,fsumsignquantity
+           ,fsumsignnum
+           ,cbaccounter
+           ,bcosting
+           ,cordercode
+           ,iorderrowno
+           ,fcusminprice
+           ,icostquantity
+           ,icostsum
+           ,ispecialtype
+           ,cvmivencode
+           ,iexchsum
+           ,imoneysum
+           ,irowno
+           ,frettbquantity
+           ,fretsum
+           ,iExpiratDateCalcu
+           ,dExpirationdate
+           ,cExpirationdate
+           ,cbatchproperty1
+           ,cbatchproperty2
+           ,cbatchproperty3
+           ,cbatchproperty4
+           ,cbatchproperty5
+           ,cbatchproperty6
+           ,cbatchproperty7
+           ,cbatchproperty8
+           ,cbatchproperty9
+           ,cbatchproperty10
+           ,dblPreExchMomey
+           ,dblPreMomey
+           ,idemandtype
+           ,cdemandcode
+           ,cdemandmemo
+           ,cdemandid
+           ,idemandseq
+           ,cvencode
+           ,cReasonCode
+           ,cInvSN
+           ,iInvSNCount
+           ,bneedsign
+           ,bsignover
+           ,bneedloss
+           ,flossrate
+           ,frlossqty
+           ,fulossqty
+           ,isettletype
+           ,crelacuscode
+           ,cLossMaker
+           ,dLossDate
+           ,dLossTime
+           ,icoridlsid
+           ,fretoutqty
+           ,body_outid
+           ,fVeriBillQty
+           ,fVeriBillSum
+           ,fVeriRetQty
+           ,fVeriRetSum
+           ,fLastSettleQty
+           ,fLastSettleSum
+           ,cBookWhcode
+           ,cInVouchType
+           ,cPosition
+           ,fretqtywkp
+           ,fretqtyykp
+           ,frettbqtyykp
+           ,fretsumykp
+           ,dkeepdate
+           ,cSCloser
+           ,isaleoutid
+           ,bsaleprice
+           ,bgift
+           ,bmpforderclosed
+           ,cbSysBarCode
+           ,fxjquantity
+           ,fxjnum
+           ,bIAcreatebill
+           ,cParentCode
+           ,cChildCode
+           ,fchildqty
+           ,fchildrate
+           ,iCalcType
+           ,fappretwkpqty
+           ,fappretwkpsum
+           ,fappretykpqty
+           ,fappretykpsum
+           ,fappretwkptbqty
+           ,fappretykptbqty
+           ,irtnappid
+           ,crtnappcode
+           ,fretailrealamount
+           ,fretailsettleamount)
      VALUES
            ((select DLID from dispatchlist where cdlcode = #orderNum#)
            ,0
@@ -191,7 +191,7 @@ INSERT INTO [UFDATA_998_2015].[dbo].[DispatchLists]
            ,0
            ,NULL
            ,NULL
-           ,#id#
+           ,(select top 1 max(iDLsID) from YDH_Max_OrderID where TableName = 'DISPATCH')
            ,100
            ,100
            ,(select cInvName from inventory where cinvdefine5 = #productCode#)
@@ -239,7 +239,7 @@ INSERT INTO [UFDATA_998_2015].[dbo].[DispatchLists]
            ,NULL
            ,1
            ,#originOrderNum#
-           ,isnull((select max(isosid)+1  from SO_SODetails), 1)
+           ,isnull((select max(irowno)+1  from dispatchlists where DLID = (select DLID from dispatchlist where cdlcode = #orderNum#)), 1)
            ,NULL
            ,NULL
            ,NULL
@@ -247,7 +247,7 @@ INSERT INTO [UFDATA_998_2015].[dbo].[DispatchLists]
            ,NULL
            ,NULL
            ,NULL
-           ,isnull((select max(isosid)+1  from SO_SODetails), 1)
+           ,isnull((select max(irowno)+1  from dispatchlists where DLID = (select DLID from dispatchlist where cdlcode = #orderNum#)), 1)
            ,NULL
            ,NULL
            ,0
@@ -307,7 +307,7 @@ INSERT INTO [UFDATA_998_2015].[dbo].[DispatchLists]
            ,1
            ,0
            ,NULL
-           ,'||SA01|'+#orderNum#+'|'
+           ,'||SA01|'+#orderNum#+'|' 
            ,NULL
            ,NULL
            ,1
